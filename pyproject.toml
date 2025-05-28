@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-wrapper"
+version = "0.1.0"
+description = "A unified Python wrapper for multiple Large Language Model APIs"
+readme = "README.md"
+authors = [
+    {name = "Kevin Wu", email = "kewu93@gmail.com"}
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+keywords = ["llm", "openai", "claude", "gemini", "ai", "batch-processing", "async"]
+dependencies = [
+    "openai>=1.0.0",
+    "anthropic>=0.25.0",
+    "google-generativeai>=0.4.0",
+    "tiktoken>=0.5.0",
+    "pandas>=2.0.0",
+    "tqdm>=4.65.0",
+    "Pillow>=10.0.0",
+    "requests>=2.31.0",
+    "aiohttp>=3.8.0",
+    "python-dotenv>=1.0.0",
+    "asyncio-throttle>=1.0.0",
+    "google-auth>=2.20.0",
+    "google-auth-oauthlib>=1.0.0",
+    "google-auth-httplib2>=0.1.0",
+]
+requires-python = ">=3.8"
+
+[project.urls]
+"Homepage" = "https://github.com/kevinwu0/llm-wrapper"
+"Bug Reports" = "https://github.com/kevinwu0/llm-wrapper/issues"
+"Source" = "https://github.com/kevinwu0/llm-wrapper"
+"Documentation" = "https://github.com/kevinwu0/llm-wrapper#readme"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["llm_wrapper*"] 

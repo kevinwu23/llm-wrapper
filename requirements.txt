@@ -1,0 +1,31 @@
+# Core LLM API clients
+openai>=1.0.0
+anthropic>=0.25.0
+google-generativeai>=0.4.0
+
+# Token counting
+tiktoken>=0.5.0
+
+# Data processing and utilities
+pandas>=2.0.0
+tqdm>=4.65.0
+
+# Image processing (for utils.py)
+Pillow>=10.0.0
+
+# HTTP requests
+requests>=2.31.0
+
+# Async HTTP requests (for batch processing)
+aiohttp>=3.8.0
+
+# Environment variables (for automatic .env loading)
+python-dotenv>=1.0.0
+
+# Optional: for advanced rate limiting (if used in api_request_parallel_processor)
+asyncio-throttle>=1.0.0
+
+# Optional: Google Authentication (if needed for Gemini API)
+google-auth>=2.20.0
+google-auth-oauthlib>=1.0.0
+google-auth-httplib2>=0.1.0
