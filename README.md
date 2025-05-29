@@ -16,7 +16,7 @@ A unified Python wrapper for multiple Large Language Model APIs with built-in ba
 ### Installation
 
 ```bash
-pip install llm-wrapper
+pip install git+https://github.com/kevinwu23/llm-wrapper.git
 ```
 
 ### Basic Usage
